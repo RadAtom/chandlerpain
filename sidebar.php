@@ -5,7 +5,7 @@
 **/
 ?>
 
-<div class="large-3 small-4columns">
+<div class="large-3 small-4 columns">
 	<aside class="blog-sidebar" role="complimentary">
 		<?php
 		if(is_page()){

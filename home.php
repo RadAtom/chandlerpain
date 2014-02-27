@@ -3,8 +3,6 @@
  * @package WordPress
  * @subpackage ChandlerPain
 **/
-?>
- 
 get_header(); 
 ?>
 
