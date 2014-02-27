@@ -1,9 +1,23 @@
 <?php
+/**
+ * @package WordPress
+ * @subpackage ChandlerPain
+**/
+
 
 function my_widgets_init() {
 	register_sidebar(array(
 	'name' => __( 'Main Sidebar' ),
 	'id' => 'sidebar',
+	'before_widget' => '',
+	'after_widget' => '',
+	'before_title' => '<h5>',
+	'after_title' => '</h5>',
+	));
+
+	register_sidebar(array(
+	'name' => __( 'Blog Sidebar' ),
+	'id' => 'blog-sidebar',
 	'before_widget' => '',
 	'after_widget' => '',
 	'before_title' => '<h5>',

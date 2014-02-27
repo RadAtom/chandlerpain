@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage TwelveOneFive
+ * @subpackage ChandlerPain
 **/
 
 //Version for Cache Busting
@@ -60,8 +60,25 @@ $theme_ver = "?ver=0.0.1";
 
 	<link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>" />
 
-	<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
-
 
 </head>
 <body <?php body_class(); ?>>
+
+<?php
+	// Add Microdata for Blog Post Pages
+	if (is_single()) {
+		$mircroData = ' itemscope itemtype="http://schema.org/Blog"';
+	}
+	else {
+		$mircroData = '';
+	}
+?>
+<div class="row page-wrap">
+<section class="" <?php echo $mircroData; ?>>
+
+<header class="page-header" role="banner">
+	<div class="small-12 columns" id="header">
+	</div>
+</header>
+
+<?php get_template_part( 'parts/nav' ); ?>
