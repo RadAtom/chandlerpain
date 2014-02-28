@@ -34,18 +34,9 @@ $theme_ver = "?ver=0.0.1";
 	echo ' | ' . sprintf( __( 'Page %s', 'chandlerpainclinic' ), max( $paged, $page ) );
 
 	?></title>
-
-	<?php //MIRCO AND SOCIAL METADATA AND ICON LINKS ?>
-	<!--Google Publisher and Canonical-->
-	<!-- <link href="" rel="author" /> -->
-
-	<?php get_template_part( 'temp-parts/head', 'microdata-meta' ); //microdata for better snippets ?>
-
-	<?php //get_template_part( 'temp-parts/head', 'social-meta' ); //social metadata for better representation when sharing ?>
-
-	<?php get_template_part( 'temp-parts/head', 'icon-links' ); //Icon link tags for favicons and touch icons ?>
-
 	<?php //STYLES ?>
+	<link rel="stylesheet" media="all" href="<?php echo get_template_directory_uri(); ?>/css/foundation.css" />
+
 	<link rel="stylesheet" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?><?php echo $theme_ver; ?>" />
 
 	<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.93701.js<?php echo $theme_ver; ?>"></script>
@@ -82,3 +73,5 @@ $theme_ver = "?ver=0.0.1";
 </header>
 
 <?php get_template_part( 'parts/nav' ); ?>
+
+<div class="small-12 columns">

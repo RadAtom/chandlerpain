@@ -4,6 +4,8 @@
  * @subpackage ChandlerPain
 **/
 ?>
+</div>
+
 	<div class="small-12 columns">
 		<footer class="page-footer" role="contentinfo">
 		<div class="medium-4 small-12 columns">

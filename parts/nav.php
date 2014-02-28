@@ -4,7 +4,7 @@
  * @subpackage ChandlerPain
 **/
 ?>
-<div class="contain-to-grid fixed" id="nav">
+<div class="small-12 columns" id="nav">
 	<?php 
 	/*
 <nav class="top-bar" data-topbar>
@@ -32,21 +32,7 @@
 
     $defaults = array(
       'theme_location'  => 'main-menu',
-      'menu'            => '',
       'container'       => 'nav',
-      'container_class' => '',
-      'container_id'    => '',
-      'menu_class'      => 'button-group',
-      'menu_id'         => '',
-      'echo'            => true,
-      'fallback_cb'     => 'wp_nav_menu',
-      'before'          => '',
-      'after'           => '',
-      'link_before'     => '',
-      'link_after'      => '',
-      'items_wrap'      => '<ul class="%2$s" role="navigation">%3$s</ul>',
-      'depth'           => 0,
-      'walker'          => new foundation_walker()
     );
 
     wp_nav_menu( $defaults );
