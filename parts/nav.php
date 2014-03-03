@@ -31,11 +31,30 @@
 	*/
 
     $defaults = array(
-      'theme_location'  => 'main-menu',
-      'container'       => 'nav',
+		'theme_location'  => 'menu-header',
+		'menu'            => '',
+		'container'       => '',
+		'container_class' => '',
+		'container_id'    => '',
+		'menu_class'      => 'left',
+		'echo'            => true,
+		'depth'           => 0,
+		'walker'          => new Foundation_Nav_Walker()
     );
+    ?>
 
-    wp_nav_menu( $defaults );
 
-      ?>
+<nav class="top-bar" data-topbar>
+	<ul class="title-area">
+		<li class="name"></li>
+		<li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+	</ul>
+
+	<section class="top-bar-section">
+		<?php wp_nav_menu( $defaults );?>
+	</section>
+</nav>
+
+
+
 </div>

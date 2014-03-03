@@ -6,6 +6,7 @@
 
 require_once('inc/menus.php');
 require_once('inc/widgets.php');
+require_once('inc/nav-walker.php');
 
 
 //so we can have some featured images
