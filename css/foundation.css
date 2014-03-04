@@ -1227,7 +1227,14 @@ meta.foundation-mq-topbar {
     height: auto;
     background: transparent; }
     .top-bar.expanded .title-area {
-      background: #333333; }
+      background: #4881BC;
+  background: -moz-linear-gradient(#4881BC, #000);
+  background: -o-linear-gradient(#4881BC, #000);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4881BC), to(#000));
+  background: -webkit-linear-gradient(#4881BC, #000);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px; }
     .top-bar.expanded .toggle-topbar a {
       color: #888888; }
       .top-bar.expanded .toggle-topbar a span {
@@ -1263,9 +1270,23 @@ meta.foundation-mq-topbar {
     font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-size: 0.8125rem;
     font-weight: normal;
-    background: #333333; }
+    background: #4881BC;
+  background: -moz-linear-gradient(#4881BC, #000);
+  background: -o-linear-gradient(#4881BC, #000);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4881BC), to(#000));
+  background: -webkit-linear-gradient(#4881BC, #000);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px; }
     .top-bar-section ul li > a.button {
-      background: #008cba;
+      background: #4881BC;
+  background: -moz-linear-gradient(#4881BC, #000);
+  background: -o-linear-gradient(#4881BC, #000);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4881BC), to(#000));
+  background: -webkit-linear-gradient(#4881BC, #000);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;;
       font-size: 0.8125rem;
       padding-right: 15px;
       padding-left: 15px; }
@@ -1284,13 +1305,34 @@ meta.foundation-mq-topbar {
       .top-bar-section ul li > a.button.alert:hover {
         background: #d42b0f; }
   .top-bar-section ul li:hover > a {
-    background: #272727;
+    background: #4881BC;
+  background: -moz-linear-gradient(#4881BC, #000);
+  background: -o-linear-gradient(#4881BC, #000);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4881BC), to(#000));
+  background: -webkit-linear-gradient(#4881BC, #000);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;;
     color: white; }
   .top-bar-section ul li.active > a {
-    background: #008cba;
+    background: #4881BC;
+  background: -moz-linear-gradient(#4881BC, #000);
+  background: -o-linear-gradient(#4881BC, #000);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4881BC), to(#000));
+  background: -webkit-linear-gradient(#4881BC, #000);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;;
     color: white; }
     .top-bar-section ul li.active > a:hover {
-      background: #0078a0; }
+      background: #4881BC;
+  background: -moz-linear-gradient(#4881BC, #000);
+  background: -o-linear-gradient(#4881BC, #000);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4881BC), to(#000));
+  background: -webkit-linear-gradient(#4881BC, #000);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;; }
   .top-bar-section .has-form {
     padding: 15px; }
   .top-bar-section .has-dropdown {
@@ -1395,9 +1437,23 @@ meta.foundation-mq-topbar {
     .top-bar-section li:not(.has-form) a:not(.button) {
       padding: 0 15px;
       line-height: 45px;
-      background: #333333; }
+      background: #4881BC;
+  background: -moz-linear-gradient(#4881BC, #000);
+  background: -o-linear-gradient(#4881BC, #000);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4881BC), to(#000));
+  background: -webkit-linear-gradient(#4881BC, #000);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
-        background: #272727; }
+        background: #4881BC;
+  background: -moz-linear-gradient(#4881BC, #000);
+  background: -o-linear-gradient(#4881BC, #000);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4881BC), to(#000));
+  background: -webkit-linear-gradient(#4881BC, #000);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px; }
     .top-bar-section .has-dropdown > a {
       padding-right: 35px !important; }
       .top-bar-section .has-dropdown > a:after {

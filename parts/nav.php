@@ -4,7 +4,7 @@
  * @subpackage ChandlerPain
 **/
 ?>
-<div class="small-12 columns" id="nav">
+<div class="small-12 columns sticky nopad" id="nav">
 	<?php 
 	/*
 <nav class="top-bar" data-topbar>

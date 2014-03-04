@@ -39,7 +39,7 @@ $theme_ver = "?ver=0.0.1";
 
 	<link rel="stylesheet" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?><?php echo $theme_ver; ?>" />
 
-	<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.93701.js<?php echo $theme_ver; ?>"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr.js<?php echo $theme_ver; ?>"></script>
 
 	<?php wp_head(); //WP HEAD ?>
 
@@ -67,7 +67,7 @@ $theme_ver = "?ver=0.0.1";
 <div class="row page-wrap">
 <section class="" <?php echo $mircroData; ?>>
 
-<div class="small-12 columns" id="header">
+<div class="small-12 columns nopad" id="header">
 	<header class="page-header" role="banner" itemscope itemtype="http://schema.org/Organization">
 
 		<?php
@@ -102,4 +102,4 @@ $theme_ver = "?ver=0.0.1";
 
 <?php get_template_part( 'parts/nav' ); ?>
 
-<div class="small-12 columns">
+<div class="small-12 columns page-content">

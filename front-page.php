@@ -6,7 +6,7 @@
 get_header(); 
 ?>
 
-<div class="large-9 small-8 columns">
+<div class="large-9 medium-8 small-12  columns">
 <section class="content page-blog landing" role="main">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<article class="">

@@ -13,21 +13,19 @@ get_sidebar();
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<article class="">
 		<header class="post-header">
-			<a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+			<h1><?php the_title(); ?></h1>
 			<span class="date-time">
 				<time pubdate>
-					Posted On<?php the_date(); ?>
+					Posted On <?php the_date(); ?>
 				</time>
 			</span>
 		</header>
+		<?php the_content(); ?>
 
-		<?php 
-		the_excerpt(); 
-
-		?> 
-		<footer class="post-footer small-12 columns ">
-			<?php comments_popup_link( '<span class="leave-reply right">' .'comment' . '</span>','<span class="leave-reply right">' .'comment' . '</span>','<span class="leave-reply right">' .'comment' . '</span>'); ?>
+		<footer class="post-footer">
+				<?php comments_popup_link( '<span class="leave-reply">' .'comment' . '</span>','<span class="leave-reply">' .'comment' . '</span>','<span class="leave-reply">' .'comment' . '</span>'); ?>
 		</footer>
+		<?php comments_template(); ?>
 	</article>
 <?php
 endwhile;
