@@ -68,16 +68,24 @@ $theme_ver = "?ver=0.0.1";
 <section class="" <?php echo $mircroData; ?>>
 
 	<header class="page-header small-12 columns nopad" id="header" role="banner" itemscope itemtype="http://schema.org/Organization">
+		<div class="large-6 small-12 columns">
+			<?php
+			if(is_front_page()){
+				echo '<h1><span itemprop="name">'.get_bloginfo( 'name' ).'</span></h1>';
+			}else{
+				echo '<h2><span itemprop="name">'.get_bloginfo( 'name' ).'</span></h2>';
+			}
+			?>
+		</div>
 
+		<div class="large-6 small-12 columns">
+		</div>
+
+		<div class="small-12 columns">
+		</div>
 		
 		<div class="safehide somemitchvariablename">
-		<?php
-		if(is_front_page()){
-			echo '<h1><span itemprop="name">'.get_bloginfo( 'name' ).'</span></h1>';
-		}else{
-			echo '<h2><span itemprop="name">'.get_bloginfo( 'name' ).'</span></h2>';
-		}
-		?>
+		
 		
 		<h2 ><?php echo get_bloginfo( 'description'); ?></h2>
 		<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
