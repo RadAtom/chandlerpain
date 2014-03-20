@@ -67,8 +67,28 @@ $theme_ver = "?ver=0.0.1";
 <div class="row page-wrap">
 <section class="" <?php echo $mircroData; ?>>
 
-<div class="small-12 columns nopad" id="header">
-	<header class="page-header" role="banner" itemscope itemtype="http://schema.org/Organization">
+	<header class="page-header small-12 columns nopad" id="header" role="banner" itemscope itemtype="http://schema.org/Organization">
+
+		
+		<div class="safehide somemitchvariablename">
+		<?php
+		if(is_front_page()){
+			echo '<h1><span itemprop="name">'.get_bloginfo( 'name' ).'</span></h1>';
+		}else{
+			echo '<h2><span itemprop="name">'.get_bloginfo( 'name' ).'</span></h2>';
+		}
+		?>
+		
+		<h2 ><?php echo get_bloginfo( 'description'); ?></h2>
+		<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+			<span itemprop="streetAddress">4050 West Ray Road Suite #18</span>
+			<span itemprop="addressLocality">Chandler</span>
+			<span itemprop="addressRegion">AZ</span>
+			<span itemprop="postalCode">85226</span>
+		</div>
+		<span itemprop="telephone">480-897-0330</span>
+		<span itemprop="url"><?php echo get_bloginfo( 'wpurl'); ?></span>
+		</div>
 
 		<?php
 		//get the post/page featured image ready for display....
@@ -79,26 +99,16 @@ $theme_ver = "?ver=0.0.1";
 		//$featuredImage = get_the_post_thumbnail( get_queried_object_id(), 'full' );
 		//echo $featuredImage;
 		?>
-		<img src="<?php echo $featuredImage; ?>" alt="" class="header-image">
-		<?php
-		if(is_front_page()){
-			echo '<h1 class="hide"><span itemprop="name">'.get_bloginfo( 'name' ).'</span></h1>';
-		}else{
-			echo '<h2 class="hide"><span itemprop="name">'.get_bloginfo( 'name' ).'</span></h2>';
-		}
-		?>
-		
-		<h2  class="hide"><?php echo get_bloginfo( 'description'); ?></h2>
-		<div class="hide" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-			<span itemprop="streetAddress">4050 West Ray Road Suite #18</span>
-			<span itemprop="addressLocality">Chandler</span>
-			<span itemprop="addressRegion">AZ</span>
-			<span itemprop="postalCode">85226</span>
-		</div>
-		<span itemprop="telephone" class="hide">480-897-0330</span>
-		<span itemprop="url" class="hide"><?php echo get_bloginfo( 'wpurl'); ?></span>
+		<a href="<?php echo get_bloginfo( 'wpurl' ); ?>"><img src="<?php echo $featuredImage; ?>" alt="" class="header-image"></a>
 	</header>
+<div class="small-12 columns nopad header-cta" id="header-cta">
+	<?php 
+	//setting up some variables for use below...
+	$headerHelper = new HeaderCTA();
+	?>
+	<a href="<?php echo $headerHelper->getActionPageURLSetting(); ?>"><?php echo $headerHelper->getActoinTextSetting(); ?></a>
 </div>
+
 
 <?php get_template_part( 'parts/nav' ); ?>
 

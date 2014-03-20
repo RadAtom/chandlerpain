@@ -8,6 +8,7 @@ require_once('inc/menus.php');
 require_once('inc/widgets.php');
 require_once('inc/nav-walker.php');
 require_once('inc/comments-walker.php');
+require_once('inc/headercta.php');
 
 
 //so we can have some featured images
